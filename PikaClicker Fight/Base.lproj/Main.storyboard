@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,86 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PikaClicker_Fight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="216dd5541942fb966deed5600ff73eca 2" translatesAutoresizingMaskIntoConstraints="NO" id="KA4-8j-dyj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PikaClicker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXE-Pz-JIW">
+                                <rect key="frame" x="52" y="60" width="271" height="46"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="45"/>
+                                <color key="textColor" red="0.83340948820114136" green="0.63978248834609985" blue="0.15161818265914917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMm-BM-bdy">
+                                <rect key="frame" x="127" y="114" width="121" height="49"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="42"/>
+                                <color key="textColor" red="0.83340948820114136" green="0.63978248834609985" blue="0.15161818265914917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See who can tap the fastest!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC6-te-WUO">
+                                <rect key="frame" x="12" y="588" width="351" height="25"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <color key="textColor" red="0.83340948820114136" green="0.63978248834609985" blue="0.15161818265914917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMR-8R-sJX">
+                                <rect key="frame" x="128" y="475" width="118" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="HsM-Le-vwD"/>
+                                    <constraint firstAttribute="height" constant="116" id="VtZ-c0-gwz"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="if_General_Office_65_2530844"/>
+                                <connections>
+                                    <segue destination="xtz-O8-Vqg" kind="show" id="O2T-yH-hL4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FXE-Pz-JIW" firstAttribute="centerX" secondItem="mMm-BM-bdy" secondAttribute="centerX" id="3NV-Oz-8eo"/>
+                            <constraint firstItem="FXE-Pz-JIW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="5eA-g3-cUx"/>
+                            <constraint firstItem="KA4-8j-dyj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cnq-rQ-mcV"/>
+                            <constraint firstItem="KA4-8j-dyj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DDt-Gg-dTv"/>
+                            <constraint firstItem="mMm-BM-bdy" firstAttribute="top" secondItem="FXE-Pz-JIW" secondAttribute="bottom" constant="8" symbolic="YES" id="HYS-8I-A4T"/>
+                            <constraint firstItem="SMR-8R-sJX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="LyH-nT-pcA"/>
+                            <constraint firstItem="SMR-8R-sJX" firstAttribute="top" secondItem="mMm-BM-bdy" secondAttribute="bottom" constant="312" id="Nxa-S2-wnW"/>
+                            <constraint firstItem="KA4-8j-dyj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qnv-CM-H3u"/>
+                            <constraint firstItem="mMm-BM-bdy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VW9-7b-fjw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HC6-te-WUO" secondAttribute="bottom" constant="54" id="caG-u6-TaT"/>
+                            <constraint firstItem="FXE-Pz-JIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEa-sc-q8K"/>
+                            <constraint firstItem="KA4-8j-dyj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fLB-mA-Iwr"/>
+                            <constraint firstItem="HC6-te-WUO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m4y-d7-k3j"/>
+                            <constraint firstItem="KA4-8j-dyj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sT2-Qz-Wbv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7oq-ew-6dn">
+            <objects>
+                <viewController id="xtz-O8-Vqg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p1m-r4-7ku">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="M95-Vt-b6d"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGw-4Q-miu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="216dd5541942fb966deed5600ff73eca 2" width="750" height="1334"/>
+        <image name="if_General_Office_65_2530844" width="256" height="256"/>
+    </resources>
 </document>

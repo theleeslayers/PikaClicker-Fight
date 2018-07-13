@@ -431,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VA35W59BV9;
+				DEVELOPMENT_TEAM = 3BJZ9N266X;
 				INFOPLIST_FILE = "PikaClicker Fight/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VA35W59BV9;
+				DEVELOPMENT_TEAM = 3BJZ9N266X;
 				INFOPLIST_FILE = "PikaClicker Fight/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
