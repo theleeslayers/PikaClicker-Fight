@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89030F4320F905FA0044A3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89030F4220F905FA0044A3DA /* AppDelegate.swift */; };
+		89030F4520F905FA0044A3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89030F4420F905FA0044A3DA /* ViewController.swift */; };
+		89030F4820F905FA0044A3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89030F4620F905FA0044A3DA /* Main.storyboard */; };
+		89030F4A20F905FB0044A3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89030F4920F905FB0044A3DA /* Assets.xcassets */; };
+		89030F4D20F905FB0044A3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89030F4B20F905FB0044A3DA /* LaunchScreen.storyboard */; };
+		89030F5820F905FC0044A3DA /* PikaClicker_FightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89030F5720F905FC0044A3DA /* PikaClicker_FightTests.swift */; };
+		89030F6320F905FC0044A3DA /* PikaClicker_FightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89030F6220F905FC0044A3DA /* PikaClicker_FightUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89030F5420F905FC0044A3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89030F3720F905FA0044A3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89030F3E20F905FA0044A3DA;
+			remoteInfo = "PikaClicker Fight";
+		};
+		89030F5F20F905FC0044A3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89030F3720F905FA0044A3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89030F3E20F905FA0044A3DA;
+			remoteInfo = "PikaClicker Fight";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89030F3F20F905FA0044A3DA /* PikaClicker Fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PikaClicker Fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89030F4220F905FA0044A3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89030F4420F905FA0044A3DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89030F4720F905FA0044A3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89030F4920F905FB0044A3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89030F4C20F905FB0044A3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89030F4E20F905FB0044A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89030F5320F905FC0044A3DA /* PikaClicker FightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PikaClicker FightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89030F5720F905FC0044A3DA /* PikaClicker_FightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikaClicker_FightTests.swift; sourceTree = "<group>"; };
+		89030F5920F905FC0044A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89030F5E20F905FC0044A3DA /* PikaClicker FightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PikaClicker FightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89030F6220F905FC0044A3DA /* PikaClicker_FightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikaClicker_FightUITests.swift; sourceTree = "<group>"; };
+		89030F6420F905FC0044A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89030F3C20F905FA0044A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89030F5020F905FC0044A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89030F5B20F905FC0044A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89030F3620F905FA0044A3DA = {
+			isa = PBXGroup;
+			children = (
+				89030F4120F905FA0044A3DA /* PikaClicker Fight */,
+				89030F5620F905FC0044A3DA /* PikaClicker FightTests */,
+				89030F6120F905FC0044A3DA /* PikaClicker FightUITests */,
+				89030F4020F905FA0044A3DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89030F4020F905FA0044A3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89030F3F20F905FA0044A3DA /* PikaClicker Fight.app */,
+				89030F5320F905FC0044A3DA /* PikaClicker FightTests.xctest */,
+				89030F5E20F905FC0044A3DA /* PikaClicker FightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89030F4120F905FA0044A3DA /* PikaClicker Fight */ = {
+			isa = PBXGroup;
+			children = (
+				89030F4220F905FA0044A3DA /* AppDelegate.swift */,
+				89030F4420F905FA0044A3DA /* ViewController.swift */,
+				89030F4620F905FA0044A3DA /* Main.storyboard */,
+				89030F4920F905FB0044A3DA /* Assets.xcassets */,
+				89030F4B20F905FB0044A3DA /* LaunchScreen.storyboard */,
+				89030F4E20F905FB0044A3DA /* Info.plist */,
+			);
+			path = "PikaClicker Fight";
+			sourceTree = "<group>";
+		};
+		89030F5620F905FC0044A3DA /* PikaClicker FightTests */ = {
+			isa = PBXGroup;
+			children = (
+				89030F5720F905FC0044A3DA /* PikaClicker_FightTests.swift */,
+				89030F5920F905FC0044A3DA /* Info.plist */,
+			);
+			path = "PikaClicker FightTests";
+			sourceTree = "<group>";
+		};
+		89030F6120F905FC0044A3DA /* PikaClicker FightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89030F6220F905FC0044A3DA /* PikaClicker_FightUITests.swift */,
+				89030F6420F905FC0044A3DA /* Info.plist */,
+			);
+			path = "PikaClicker FightUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89030F3E20F905FA0044A3DA /* PikaClicker Fight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89030F6720F905FC0044A3DA /* Build configuration list for PBXNativeTarget "PikaClicker Fight" */;
+			buildPhases = (
+				89030F3B20F905FA0044A3DA /* Sources */,
+				89030F3C20F905FA0044A3DA /* Frameworks */,
+				89030F3D20F905FA0044A3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PikaClicker Fight";
+			productName = "PikaClicker Fight";
+			productReference = 89030F3F20F905FA0044A3DA /* PikaClicker Fight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89030F5220F905FC0044A3DA /* PikaClicker FightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89030F6A20F905FC0044A3DA /* Build configuration list for PBXNativeTarget "PikaClicker FightTests" */;
+			buildPhases = (
+				89030F4F20F905FC0044A3DA /* Sources */,
+				89030F5020F905FC0044A3DA /* Frameworks */,
+				89030F5120F905FC0044A3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89030F5520F905FC0044A3DA /* PBXTargetDependency */,
+			);
+			name = "PikaClicker FightTests";
+			productName = "PikaClicker FightTests";
+			productReference = 89030F5320F905FC0044A3DA /* PikaClicker FightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89030F5D20F905FC0044A3DA /* PikaClicker FightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89030F6D20F905FC0044A3DA /* Build configuration list for PBXNativeTarget "PikaClicker FightUITests" */;
+			buildPhases = (
+				89030F5A20F905FC0044A3DA /* Sources */,
+				89030F5B20F905FC0044A3DA /* Frameworks */,
+				89030F5C20F905FC0044A3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89030F6020F905FC0044A3DA /* PBXTargetDependency */,
+			);
+			name = "PikaClicker FightUITests";
+			productName = "PikaClicker FightUITests";
+			productReference = 89030F5E20F905FC0044A3DA /* PikaClicker FightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89030F3720F905FA0044A3DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Aslan Lee";
+				TargetAttributes = {
+					89030F3E20F905FA0044A3DA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					89030F5220F905FC0044A3DA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 89030F3E20F905FA0044A3DA;
+					};
+					89030F5D20F905FC0044A3DA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 89030F3E20F905FA0044A3DA;
+					};
+				};
+			};
+			buildConfigurationList = 89030F3A20F905FA0044A3DA /* Build configuration list for PBXProject "PikaClicker Fight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89030F3620F905FA0044A3DA;
+			productRefGroup = 89030F4020F905FA0044A3DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89030F3E20F905FA0044A3DA /* PikaClicker Fight */,
+				89030F5220F905FC0044A3DA /* PikaClicker FightTests */,
+				89030F5D20F905FC0044A3DA /* PikaClicker FightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89030F3D20F905FA0044A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89030F4D20F905FB0044A3DA /* LaunchScreen.storyboard in Resources */,
+				89030F4A20F905FB0044A3DA /* Assets.xcassets in Resources */,
+				89030F4820F905FA0044A3DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89030F5120F905FC0044A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89030F5C20F905FC0044A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89030F3B20F905FA0044A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89030F4520F905FA0044A3DA /* ViewController.swift in Sources */,
+				89030F4320F905FA0044A3DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89030F4F20F905FC0044A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89030F5820F905FC0044A3DA /* PikaClicker_FightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89030F5A20F905FC0044A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89030F6320F905FC0044A3DA /* PikaClicker_FightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89030F5520F905FC0044A3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89030F3E20F905FA0044A3DA /* PikaClicker Fight */;
+			targetProxy = 89030F5420F905FC0044A3DA /* PBXContainerItemProxy */;
+		};
+		89030F6020F905FC0044A3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89030F3E20F905FA0044A3DA /* PikaClicker Fight */;
+			targetProxy = 89030F5F20F905FC0044A3DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89030F4620F905FA0044A3DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89030F4720F905FA0044A3DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89030F4B20F905FB0044A3DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89030F4C20F905FB0044A3DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89030F6520F905FC0044A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89030F6620F905FC0044A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89030F6820F905FC0044A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA35W59BV9;
+				INFOPLIST_FILE = "PikaClicker Fight/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Aslan-Lee.PikaClicker-Fight";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89030F6920F905FC0044A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA35W59BV9;
+				INFOPLIST_FILE = "PikaClicker Fight/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Aslan-Lee.PikaClicker-Fight";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89030F6B20F905FC0044A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA35W59BV9;
+				INFOPLIST_FILE = "PikaClicker FightTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Aslan-Lee.PikaClicker-FightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PikaClicker Fight.app/PikaClicker Fight";
+			};
+			name = Debug;
+		};
+		89030F6C20F905FC0044A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA35W59BV9;
+				INFOPLIST_FILE = "PikaClicker FightTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Aslan-Lee.PikaClicker-FightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PikaClicker Fight.app/PikaClicker Fight";
+			};
+			name = Release;
+		};
+		89030F6E20F905FC0044A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA35W59BV9;
+				INFOPLIST_FILE = "PikaClicker FightUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Aslan-Lee.PikaClicker-FightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PikaClicker Fight";
+			};
+			name = Debug;
+		};
+		89030F6F20F905FC0044A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA35W59BV9;
+				INFOPLIST_FILE = "PikaClicker FightUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Aslan-Lee.PikaClicker-FightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PikaClicker Fight";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89030F3A20F905FA0044A3DA /* Build configuration list for PBXProject "PikaClicker Fight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89030F6520F905FC0044A3DA /* Debug */,
+				89030F6620F905FC0044A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89030F6720F905FC0044A3DA /* Build configuration list for PBXNativeTarget "PikaClicker Fight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89030F6820F905FC0044A3DA /* Debug */,
+				89030F6920F905FC0044A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89030F6A20F905FC0044A3DA /* Build configuration list for PBXNativeTarget "PikaClicker FightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89030F6B20F905FC0044A3DA /* Debug */,
+				89030F6C20F905FC0044A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89030F6D20F905FC0044A3DA /* Build configuration list for PBXNativeTarget "PikaClicker FightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89030F6E20F905FC0044A3DA /* Debug */,
+				89030F6F20F905FC0044A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89030F3720F905FA0044A3DA /* Project object */;
+}
