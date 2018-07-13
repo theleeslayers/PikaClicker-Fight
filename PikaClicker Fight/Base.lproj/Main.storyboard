@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="width" constant="118" id="HsM-Le-vwD"/>
                                     <constraint firstAttribute="height" constant="116" id="VtZ-c0-gwz"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="if_General_Office_65_2530844"/>
+                                <state key="normal" title="Button" image="if__Battle_1337441"/>
                                 <connections>
                                     <segue destination="xtz-O8-Vqg" kind="show" id="O2T-yH-hL4"/>
                                 </connections>
@@ -93,6 +93,6 @@
     </scenes>
     <resources>
         <image name="216dd5541942fb966deed5600ff73eca 2" width="750" height="1334"/>
-        <image name="if_General_Office_65_2530844" width="256" height="256"/>
+        <image name="if__Battle_1337441" width="256" height="256"/>
     </resources>
 </document>
