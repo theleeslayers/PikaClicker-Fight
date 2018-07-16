@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,7 +47,7 @@
                                     <constraint firstAttribute="width" constant="118" id="HsM-Le-vwD"/>
                                     <constraint firstAttribute="height" constant="116" id="VtZ-c0-gwz"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="if__Battle_1337441"/>
+                                <state key="normal" title="Button" image="battle"/>
                                 <connections>
                                     <segue destination="xtz-O8-Vqg" kind="show" id="O2T-yH-hL4"/>
                                 </connections>
@@ -83,15 +85,143 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Character" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-TE-y33">
-                                <rect key="frame" x="17" y="318" width="341" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charizardbackground" translatesAutoresizingMaskIntoConstraints="NO" id="NuA-51-kp9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Character" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-TE-y33">
+                                <rect key="frame" x="16" y="553" width="343" height="29"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-ax-5hr">
+                                <rect key="frame" x="16" y="20" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="X05-V0-GJK"/>
+                                    <constraint firstAttribute="width" constant="80" id="cUk-nm-v9s"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Pikachu_(Smiling)"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqY-HA-r4y">
+                                <rect key="frame" x="104" y="20" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="D9J-j4-wRa"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="squirtle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZy-Uo-T4r">
+                                <rect key="frame" x="192" y="20" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="qEe-4q-lGD"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="charmander"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2t-d4-bM9">
+                                <rect key="frame" x="279" y="20" width="80" height="80"/>
+                                <state key="normal" title="Button" image="eevee"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZf-9D-Be5">
+                                <rect key="frame" x="16" y="108" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="sNA-Ct-Qru"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="bulbasaur"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ny-CP-sXB">
+                                <rect key="frame" x="104" y="108" width="80" height="80"/>
+                                <state key="normal" title="Button" image="bellsprout"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZd-1r-XRN">
+                                <rect key="frame" x="192" y="108" width="80" height="80"/>
+                                <state key="normal" title="Button" image="psyduck"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btp-Tp-eSK">
+                                <rect key="frame" x="279" y="108" width="80" height="80"/>
+                                <state key="normal" title="Button" image="snorlax"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-GL-kdV">
+                                <rect key="frame" x="16" y="196" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="kyg-YA-f8e"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="meowth"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLD-kA-S33">
+                                <rect key="frame" x="104" y="196" width="80" height="80"/>
+                                <state key="normal" title="Button" image="dratini"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMe-aZ-kJ3">
+                                <rect key="frame" x="192" y="196" width="80" height="80"/>
+                                <state key="normal" title="Button" image="jigglypuff"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCi-RY-rTn">
+                                <rect key="frame" x="279" y="196" width="80" height="80"/>
+                                <state key="normal" title="Button" image="Mew"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SZy-Uo-T4r" firstAttribute="leading" secondItem="IZd-1r-XRN" secondAttribute="leading" id="4I9-LT-7an"/>
+                            <constraint firstItem="JZf-9D-Be5" firstAttribute="top" secondItem="Yhh-ax-5hr" secondAttribute="bottom" constant="8" symbolic="YES" id="5Tn-8N-VRm"/>
+                            <constraint firstItem="w2t-d4-bM9" firstAttribute="trailing" secondItem="p1m-r4-7ku" secondAttribute="trailingMargin" id="6uw-2W-bi7"/>
+                            <constraint firstItem="tLD-kA-S33" firstAttribute="leading" secondItem="hSf-GL-kdV" secondAttribute="trailing" constant="8" symbolic="YES" id="7PU-NJ-tel"/>
+                            <constraint firstItem="4Ny-CP-sXB" firstAttribute="leading" secondItem="tLD-kA-S33" secondAttribute="leading" id="7Rh-Ne-gJc"/>
+                            <constraint firstItem="hSf-GL-kdV" firstAttribute="baseline" secondItem="tLD-kA-S33" secondAttribute="baseline" id="8gz-wl-ZHW"/>
+                            <constraint firstItem="SMe-aZ-kJ3" firstAttribute="baseline" secondItem="hCi-RY-rTn" secondAttribute="baseline" id="BdB-Xq-07b"/>
+                            <constraint firstItem="tLD-kA-S33" firstAttribute="firstBaseline" secondItem="SMe-aZ-kJ3" secondAttribute="firstBaseline" id="CxD-r7-mHx"/>
+                            <constraint firstItem="Yhh-ax-5hr" firstAttribute="leading" secondItem="JZf-9D-Be5" secondAttribute="leading" id="FH9-nB-B6V"/>
+                            <constraint firstItem="TqY-HA-r4y" firstAttribute="baseline" secondItem="SZy-Uo-T4r" secondAttribute="baseline" id="GUR-BI-Aeg"/>
+                            <constraint firstItem="TqY-HA-r4y" firstAttribute="leading" secondItem="4Ny-CP-sXB" secondAttribute="leading" id="Gkj-fr-4Ed"/>
+                            <constraint firstItem="w2t-d4-bM9" firstAttribute="leading" secondItem="Btp-Tp-eSK" secondAttribute="leading" id="JNe-6i-Zp6"/>
+                            <constraint firstItem="4Ny-CP-sXB" firstAttribute="firstBaseline" secondItem="IZd-1r-XRN" secondAttribute="firstBaseline" id="LVI-Za-IWd"/>
+                            <constraint firstItem="Yhh-ax-5hr" firstAttribute="baseline" secondItem="TqY-HA-r4y" secondAttribute="baseline" id="Llh-Bb-GNa"/>
+                            <constraint firstItem="SZy-Uo-T4r" firstAttribute="top" secondItem="w2t-d4-bM9" secondAttribute="top" id="M9W-l4-PAq"/>
+                            <constraint firstItem="JZf-9D-Be5" firstAttribute="firstBaseline" secondItem="4Ny-CP-sXB" secondAttribute="firstBaseline" id="O2G-oJ-lK3"/>
+                            <constraint firstItem="SZy-Uo-T4r" firstAttribute="trailing" secondItem="IZd-1r-XRN" secondAttribute="trailing" id="Otz-xl-81B"/>
+                            <constraint firstItem="JZf-9D-Be5" firstAttribute="top" secondItem="4Ny-CP-sXB" secondAttribute="top" id="Q4P-Qb-iHW"/>
+                            <constraint firstItem="IZd-1r-XRN" firstAttribute="leading" secondItem="4Ny-CP-sXB" secondAttribute="trailing" constant="8" symbolic="YES" id="QXf-fD-DZK"/>
+                            <constraint firstItem="hSf-GL-kdV" firstAttribute="top" secondItem="tLD-kA-S33" secondAttribute="top" id="TEN-m2-ENo"/>
+                            <constraint firstItem="4Ny-CP-sXB" firstAttribute="top" secondItem="IZd-1r-XRN" secondAttribute="top" id="UmK-1N-ddm"/>
+                            <constraint firstItem="hSf-GL-kdV" firstAttribute="top" secondItem="JZf-9D-Be5" secondAttribute="bottom" constant="8" symbolic="YES" id="Wvv-oI-rXy"/>
+                            <constraint firstItem="NuA-51-kp9" firstAttribute="centerY" secondItem="p1m-r4-7ku" secondAttribute="centerY" id="Xta-eU-J21"/>
+                            <constraint firstItem="JZf-9D-Be5" firstAttribute="baseline" secondItem="4Ny-CP-sXB" secondAttribute="baseline" id="ZY7-Js-8Gf"/>
+                            <constraint firstItem="SZy-Uo-T4r" firstAttribute="firstBaseline" secondItem="w2t-d4-bM9" secondAttribute="firstBaseline" id="aeb-ft-5hC"/>
+                            <constraint firstItem="tLD-kA-S33" firstAttribute="baseline" secondItem="SMe-aZ-kJ3" secondAttribute="baseline" id="alp-zS-7FM"/>
+                            <constraint firstItem="SMe-aZ-kJ3" firstAttribute="leading" secondItem="tLD-kA-S33" secondAttribute="trailing" constant="8" symbolic="YES" id="bLM-3c-f8D"/>
+                            <constraint firstItem="Yhh-ax-5hr" firstAttribute="top" secondItem="M95-Vt-b6d" secondAttribute="top" id="bYJ-Kn-lRn"/>
+                            <constraint firstItem="hSf-GL-kdV" firstAttribute="leading" secondItem="qnV-TE-y33" secondAttribute="leading" id="bzn-P2-JCa"/>
+                            <constraint firstItem="Yhh-ax-5hr" firstAttribute="top" secondItem="TqY-HA-r4y" secondAttribute="top" id="d61-Hq-Uzu"/>
+                            <constraint firstItem="IZd-1r-XRN" firstAttribute="firstBaseline" secondItem="Btp-Tp-eSK" secondAttribute="firstBaseline" id="dEp-Kx-eq7"/>
+                            <constraint firstItem="NuA-51-kp9" firstAttribute="trailing" secondItem="M95-Vt-b6d" secondAttribute="trailing" id="ddu-dG-mCL"/>
+                            <constraint firstItem="hCi-RY-rTn" firstAttribute="trailing" secondItem="qnV-TE-y33" secondAttribute="trailing" id="f6d-z9-zBE"/>
+                            <constraint firstItem="4Ny-CP-sXB" firstAttribute="baseline" secondItem="IZd-1r-XRN" secondAttribute="baseline" id="f6q-lz-OLT"/>
+                            <constraint firstItem="Btp-Tp-eSK" firstAttribute="trailing" secondItem="hCi-RY-rTn" secondAttribute="trailing" id="fLs-iY-24Z"/>
+                            <constraint firstItem="SZy-Uo-T4r" firstAttribute="baseline" secondItem="w2t-d4-bM9" secondAttribute="baseline" id="flQ-fy-Lba"/>
+                            <constraint firstItem="IZd-1r-XRN" firstAttribute="top" secondItem="Btp-Tp-eSK" secondAttribute="top" id="gf4-3Y-M0g"/>
+                            <constraint firstItem="SMe-aZ-kJ3" firstAttribute="firstBaseline" secondItem="hCi-RY-rTn" secondAttribute="firstBaseline" id="hCe-mv-O4D"/>
+                            <constraint firstItem="M95-Vt-b6d" firstAttribute="bottom" secondItem="qnV-TE-y33" secondAttribute="bottom" constant="85" id="iFN-eR-4Hn"/>
+                            <constraint firstItem="TqY-HA-r4y" firstAttribute="leading" secondItem="Yhh-ax-5hr" secondAttribute="trailing" constant="8" symbolic="YES" id="iHj-5e-Dpp"/>
+                            <constraint firstItem="NuA-51-kp9" firstAttribute="top" secondItem="p1m-r4-7ku" secondAttribute="top" id="jTg-h4-pxG"/>
+                            <constraint firstItem="IZd-1r-XRN" firstAttribute="baseline" secondItem="Btp-Tp-eSK" secondAttribute="baseline" id="kWx-l3-nNR"/>
+                            <constraint firstItem="NuA-51-kp9" firstAttribute="leading" secondItem="M95-Vt-b6d" secondAttribute="leading" id="kgP-Ib-tEB"/>
+                            <constraint firstItem="TqY-HA-r4y" firstAttribute="firstBaseline" secondItem="SZy-Uo-T4r" secondAttribute="firstBaseline" id="l0g-2m-cvL"/>
+                            <constraint firstItem="IZd-1r-XRN" firstAttribute="leading" secondItem="SMe-aZ-kJ3" secondAttribute="leading" id="m2Z-hN-q2Z"/>
+                            <constraint firstItem="hSf-GL-kdV" firstAttribute="firstBaseline" secondItem="tLD-kA-S33" secondAttribute="firstBaseline" id="nCe-bQ-t6d"/>
+                            <constraint firstItem="w2t-d4-bM9" firstAttribute="trailing" secondItem="Btp-Tp-eSK" secondAttribute="trailing" id="nUy-Bp-Xvb"/>
+                            <constraint firstItem="SZy-Uo-T4r" firstAttribute="leading" secondItem="TqY-HA-r4y" secondAttribute="trailing" constant="8" symbolic="YES" id="njZ-bq-gLj"/>
+                            <constraint firstItem="4Ny-CP-sXB" firstAttribute="leading" secondItem="JZf-9D-Be5" secondAttribute="trailing" constant="8" symbolic="YES" id="ocj-Nb-oVY"/>
+                            <constraint firstItem="TqY-HA-r4y" firstAttribute="top" secondItem="SZy-Uo-T4r" secondAttribute="top" id="pfc-tm-U3B"/>
+                            <constraint firstItem="NuA-51-kp9" firstAttribute="bottom" secondItem="M95-Vt-b6d" secondAttribute="bottom" id="ps3-c3-06A"/>
+                            <constraint firstItem="tLD-kA-S33" firstAttribute="top" secondItem="SMe-aZ-kJ3" secondAttribute="top" id="qHv-Vn-9FD"/>
+                            <constraint firstItem="w2t-d4-bM9" firstAttribute="leading" secondItem="SZy-Uo-T4r" secondAttribute="trailing" constant="7" id="sFv-lb-Q2M"/>
+                            <constraint firstItem="Yhh-ax-5hr" firstAttribute="firstBaseline" secondItem="TqY-HA-r4y" secondAttribute="firstBaseline" id="tD0-qj-kob"/>
+                            <constraint firstItem="NuA-51-kp9" firstAttribute="centerX" secondItem="p1m-r4-7ku" secondAttribute="centerX" id="tbB-70-N4B"/>
+                            <constraint firstItem="JZf-9D-Be5" firstAttribute="leading" secondItem="hSf-GL-kdV" secondAttribute="leading" id="uqX-LU-bNL"/>
+                            <constraint firstItem="SMe-aZ-kJ3" firstAttribute="top" secondItem="hCi-RY-rTn" secondAttribute="top" id="wXp-M3-OLa"/>
+                            <constraint firstItem="IZd-1r-XRN" firstAttribute="trailing" secondItem="SMe-aZ-kJ3" secondAttribute="trailing" id="wfY-ri-Elc"/>
+                            <constraint firstItem="Yhh-ax-5hr" firstAttribute="leading" secondItem="p1m-r4-7ku" secondAttribute="leadingMargin" id="xJj-g5-Iqd"/>
+                            <constraint firstItem="Btp-Tp-eSK" firstAttribute="leading" secondItem="hCi-RY-rTn" secondAttribute="leading" id="zQU-pn-0WY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="M95-Vt-b6d"/>
                     </view>
                 </viewController>
@@ -126,6 +256,19 @@
     </scenes>
     <resources>
         <image name="216dd5541942fb966deed5600ff73eca 2" width="750" height="1334"/>
-        <image name="if__Battle_1337441" width="256" height="256"/>
+        <image name="Mew" width="256" height="256"/>
+        <image name="Pikachu_(Smiling)" width="256" height="256"/>
+        <image name="battle" width="256" height="256"/>
+        <image name="bellsprout" width="512" height="512"/>
+        <image name="bulbasaur" width="256" height="256"/>
+        <image name="charizardbackground" width="640" height="1136"/>
+        <image name="charmander" width="512" height="512"/>
+        <image name="dratini" width="512" height="512"/>
+        <image name="eevee" width="512" height="512"/>
+        <image name="jigglypuff" width="256" height="256"/>
+        <image name="meowth" width="512" height="512"/>
+        <image name="psyduck" width="512" height="512"/>
+        <image name="snorlax" width="512" height="512"/>
+        <image name="squirtle" width="512" height="512"/>
     </resources>
 </document>
