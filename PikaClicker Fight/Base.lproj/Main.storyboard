@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="7oq-ew-6dn">
             <objects>
-                <viewController id="xtz-O8-Vqg" sceneMemberID="viewController">
+                <viewController id="xtz-O8-Vqg" customClass="SecondViewController" customModule="PikaClicker_Fight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p1m-r4-7ku">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +101,9 @@
                                     <constraint firstAttribute="width" constant="80" id="cUk-nm-v9s"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Pikachu_(Smiling)"/>
+                                <connections>
+                                    <action selector="pikachuCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="xxM-P3-4lM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqY-HA-r4y">
                                 <rect key="frame" x="104" y="20" width="80" height="80"/>
@@ -108,6 +111,9 @@
                                     <constraint firstAttribute="width" constant="80" id="D9J-j4-wRa"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="squirtle"/>
+                                <connections>
+                                    <action selector="squirtleCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="jeH-pS-giu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZy-Uo-T4r">
                                 <rect key="frame" x="192" y="20" width="80" height="80"/>
@@ -115,10 +121,16 @@
                                     <constraint firstAttribute="width" constant="80" id="qEe-4q-lGD"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="charmander"/>
+                                <connections>
+                                    <action selector="charmanderCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="4jw-4F-ADh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2t-d4-bM9">
                                 <rect key="frame" x="279" y="20" width="80" height="80"/>
                                 <state key="normal" title="Button" image="eevee"/>
+                                <connections>
+                                    <action selector="eeveeCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="mEg-cr-THL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZf-9D-Be5">
                                 <rect key="frame" x="16" y="108" width="80" height="80"/>
@@ -126,18 +138,30 @@
                                     <constraint firstAttribute="height" constant="80" id="sNA-Ct-Qru"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="bulbasaur"/>
+                                <connections>
+                                    <action selector="bulbasaurCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="scK-uS-PQc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ny-CP-sXB">
                                 <rect key="frame" x="104" y="108" width="80" height="80"/>
                                 <state key="normal" title="Button" image="bellsprout"/>
+                                <connections>
+                                    <action selector="bellsproutCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="TSR-8M-X1L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZd-1r-XRN">
                                 <rect key="frame" x="192" y="108" width="80" height="80"/>
-                                <state key="normal" title="Button" image="psyduck"/>
+                                <state key="normal" title="Button" image="rattata"/>
+                                <connections>
+                                    <action selector="rattleCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="Dae-B6-kBq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btp-Tp-eSK">
                                 <rect key="frame" x="279" y="108" width="80" height="80"/>
                                 <state key="normal" title="Button" image="snorlax"/>
+                                <connections>
+                                    <action selector="snorlaxCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="o8x-51-x99"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-GL-kdV">
                                 <rect key="frame" x="16" y="196" width="80" height="80"/>
@@ -145,18 +169,30 @@
                                     <constraint firstAttribute="height" constant="80" id="kyg-YA-f8e"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="meowth"/>
+                                <connections>
+                                    <action selector="meowthCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="t1L-yJ-fOf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLD-kA-S33">
                                 <rect key="frame" x="104" y="196" width="80" height="80"/>
                                 <state key="normal" title="Button" image="dratini"/>
+                                <connections>
+                                    <action selector="dratiniCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="8Iu-Ln-nux"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMe-aZ-kJ3">
                                 <rect key="frame" x="192" y="196" width="80" height="80"/>
                                 <state key="normal" title="Button" image="jigglypuff"/>
+                                <connections>
+                                    <action selector="jigglypuffCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="w6B-PF-Sw2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCi-RY-rTn">
                                 <rect key="frame" x="279" y="196" width="80" height="80"/>
                                 <state key="normal" title="Button" image="Mew"/>
+                                <connections>
+                                    <action selector="mewCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="KPh-iF-Cfs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -267,7 +303,7 @@
         <image name="eevee" width="512" height="512"/>
         <image name="jigglypuff" width="256" height="256"/>
         <image name="meowth" width="512" height="512"/>
-        <image name="psyduck" width="512" height="512"/>
+        <image name="rattata" width="512" height="512"/>
         <image name="snorlax" width="512" height="512"/>
         <image name="squirtle" width="512" height="512"/>
     </resources>
