@@ -34,10 +34,11 @@ class SecondViewController: UIViewController {
     }
     @IBAction func mewCharacterButton(_ sender: Any) {
     }
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let blueBoxOutline = UIImage(named: "bluebox")
         
     }
 
