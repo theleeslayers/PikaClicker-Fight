@@ -11,6 +11,7 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBAction func pikachuCharacterButton(_ sender: Any) {
+        
     }
     @IBAction func squirtleCharacterButton(_ sender: Any) {
     }
