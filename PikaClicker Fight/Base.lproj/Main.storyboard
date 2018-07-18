@@ -98,7 +98,7 @@
                                     <constraint firstAttribute="height" constant="80" id="X05-V0-GJK"/>
                                     <constraint firstAttribute="width" constant="80" id="cUk-nm-v9s"/>
                                 </constraints>
-                                <state key="normal" image="Pikachu_(Smiling)"/>
+                                <state key="normal" image="pikachu"/>
                                 <connections>
                                     <action selector="pikachuCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="xxM-P3-4lM"/>
                                 </connections>
@@ -196,7 +196,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCi-RY-rTn">
                                 <rect key="frame" x="279" y="196" width="80" height="80"/>
-                                <state key="normal" image="Mew"/>
+                                <state key="normal" image="mew"/>
                                 <connections>
                                     <action selector="mewCharacterButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="KPh-iF-Cfs"/>
                                 </connections>
@@ -208,7 +208,7 @@
                                 </constraints>
                                 <state key="normal" image="FIGHT"/>
                                 <connections>
-                                    <segue destination="lMr-Ml-QRz" kind="show" id="fX4-1l-XYB"/>
+                                    <action selector="battleButton:" destination="xtz-O8-Vqg" eventType="touchUpInside" id="Suo-Qn-XrV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -313,16 +313,17 @@
                         <outlet property="rattatta" destination="IZd-1r-XRN" id="c4F-qG-ebh"/>
                         <outlet property="snorlax" destination="Btp-Tp-eSK" id="e96-lc-hnR"/>
                         <outlet property="squirtle" destination="TqY-HA-r4y" id="HzK-db-Mil"/>
+                        <segue destination="lMr-Ml-QRz" kind="show" identifier="twoToThree" id="hnn-jR-0k5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGw-4Q-miu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="824.79999999999995" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="F2F-4a-dCB">
             <objects>
-                <viewController id="lMr-Ml-QRz" sceneMemberID="viewController">
+                <viewController id="lMr-Ml-QRz" customClass="ThirdViewController" customModule="PikaClicker_Fight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fiq-0u-OIN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,15 +345,29 @@
                                     <constraint firstAttribute="height" constant="667" id="HjP-6a-Gax"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H52-Rk-8wR">
-                                <rect key="frame" x="164" y="63" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H52-Rk-8wR">
+                                <rect key="frame" x="125" y="20" width="125" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="mew"/>
+                                <connections>
+                                    <action selector="fighter1:" destination="lMr-Ml-QRz" eventType="touchUpInside" id="uOq-8L-eOI"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akC-mV-Ad1">
-                                <rect key="frame" x="164" y="573" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biO-T4-aJF">
+                                <rect key="frame" x="125" y="521" width="125" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="mew"/>
+                                <connections>
+                                    <action selector="fighter2:" destination="lMr-Ml-QRz" eventType="touchUpInside" id="nY6-4g-cPQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-gl-adD">
+                                <rect key="frame" x="167" y="318" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="xtz-O8-Vqg" kind="show" id="qh5-7Y-4oJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -366,6 +381,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tM6-XC-VZu"/>
                     </view>
+                    <connections>
+                        <outlet property="fighter1Outlet" destination="H52-Rk-8wR" id="4ZN-7U-tms"/>
+                        <outlet property="fighter2Outlet" destination="biO-T4-aJF" id="KTT-69-VD4"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="threeToOne" id="Wfe-Iz-Jld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfJ-c7-TS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,7 +396,6 @@
         <image name="216dd5541942fb966deed5600ff73eca 2" width="750" height="1334"/>
         <image name="FIGHT" width="256" height="256"/>
         <image name="Mew" width="256" height="256"/>
-        <image name="Pikachu_(Smiling)" width="256" height="256"/>
         <image name="battle" width="256" height="256"/>
         <image name="bellsprout" width="512" height="512"/>
         <image name="bulbasaur" width="256" height="256"/>
@@ -386,9 +405,14 @@
         <image name="eevee" width="512" height="512"/>
         <image name="jigglypuff" width="256" height="256"/>
         <image name="meowth" width="512" height="512"/>
+        <image name="mew" width="256" height="256"/>
+        <image name="pikachu" width="256" height="256"/>
         <image name="pokemo123n" width="640" height="960"/>
         <image name="rattata" width="512" height="512"/>
         <image name="snorlax" width="512" height="512"/>
         <image name="squirtle" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qh5-7Y-4oJ"/>
+    </inferredMetricsTieBreakers>
 </document>

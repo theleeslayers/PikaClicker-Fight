@@ -10,6 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var imageName = "mew"
+    var imageName2 = "mew"
+    
     @IBOutlet weak var pikachu: UIButton!
     @IBOutlet weak var squirtle: UIButton!
     @IBOutlet weak var charmander: UIButton!
@@ -24,9 +27,11 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var mew: UIButton!
     
     var buttons = [UIButton]()
+    var pokeNames = ["pikachu", "squirtle", "charmander", "eevee", "bulbasaur", "bellsprout", "rattata", "snorlax", "meowth", "dratini", "jigglypuff", "mew"]
     var player1 = 0
     var player2 = 0
     var player1Pick = true
+    var pickCounter = 0
     
     func choosePlayer (choice: Int){
         if player1Pick {
@@ -38,9 +43,9 @@ class SecondViewController: UIViewController {
                 }
             }
             player1 = choice
+            imageName = pokeNames[choice]
             buttons[choice].setBackgroundImage(#imageLiteral(resourceName: "blue box"), for: UIControlState.normal)
             player1Pick = false
-            
         }
         else
         {
@@ -52,12 +57,13 @@ class SecondViewController: UIViewController {
                 }
             }
             player2 = choice
+            imageName2 = pokeNames[choice]
             buttons[choice].setBackgroundImage(#imageLiteral(resourceName: "red box"), for: UIControlState.normal)
             player1Pick = true
         }
-        
+        pickCounter += 1
     }
-    
+
     @IBAction func pikachuCharacterButton(_ sender: Any) {
         choosePlayer(choice: 0)
     }
@@ -110,8 +116,7 @@ class SecondViewController: UIViewController {
         buttons.append(dratini)
         buttons.append(jigglypuff)
         buttons.append(mew)
-        
-        
+        pickCounter = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -119,6 +124,16 @@ class SecondViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! ThirdViewController
+        dvc.imageName = imageName
+        dvc.imageName2 = imageName2
+    }
 
-
+    @IBAction func battleButton(_ sender: Any) {
+        if pickCounter >= 2 {
+            performSegue(withIdentifier: "twoToThree", sender: (Any).self)
+        }
+    }
+    
 }
