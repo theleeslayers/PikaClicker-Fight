@@ -25,7 +25,7 @@ class ThirdViewController: UIViewController {
         fightCounter2 = 0
         fighter1Outlet.setImage(UIImage(named: imageName), for: .normal)
         fighter2Outlet.setImage(UIImage(named: imageName2), for: .normal)
-
+        fighter1Outlet.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
     }
     
     func showAlert(winner: String) // makes an alert for the winner
