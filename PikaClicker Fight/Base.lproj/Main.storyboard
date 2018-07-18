@@ -300,6 +300,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M95-Vt-b6d"/>
                     </view>
+                    <connections>
+                        <outlet property="bellsprout" destination="4Ny-CP-sXB" id="9na-Fv-SI6"/>
+                        <outlet property="bulbasaur" destination="JZf-9D-Be5" id="npK-Fk-FAM"/>
+                        <outlet property="charmander" destination="SZy-Uo-T4r" id="Hci-5O-VaM"/>
+                        <outlet property="dratini" destination="tLD-kA-S33" id="yIv-5T-yaJ"/>
+                        <outlet property="eevee" destination="w2t-d4-bM9" id="s3i-A0-DYX"/>
+                        <outlet property="jigglypuff" destination="SMe-aZ-kJ3" id="Lxj-to-28B"/>
+                        <outlet property="meowth" destination="hSf-GL-kdV" id="TNC-Kg-MLa"/>
+                        <outlet property="mew" destination="hCi-RY-rTn" id="tKh-Vh-W9t"/>
+                        <outlet property="pikachu" destination="Yhh-ax-5hr" id="AOd-q1-DGj"/>
+                        <outlet property="rattatta" destination="IZd-1r-XRN" id="c4F-qG-ebh"/>
+                        <outlet property="snorlax" destination="Btp-Tp-eSK" id="e96-lc-hnR"/>
+                        <outlet property="squirtle" destination="TqY-HA-r4y" id="HzK-db-Mil"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGw-4Q-miu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,6 +344,16 @@
                                     <constraint firstAttribute="height" constant="667" id="HjP-6a-Gax"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H52-Rk-8wR">
+                                <rect key="frame" x="164" y="63" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akC-mV-Ad1">
+                                <rect key="frame" x="164" y="573" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
