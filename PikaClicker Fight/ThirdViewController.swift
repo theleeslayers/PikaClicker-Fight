@@ -72,7 +72,7 @@ class ThirdViewController: UIViewController {
     fightCounter2 += 1
         checkForWinner()
         height += 5
-        
+        player2Line.transform = CGAffineTransform(_UIView.animate(withDuration: 3, animations: ))
     }
     
     func checkForWinner()
