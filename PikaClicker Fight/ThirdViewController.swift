@@ -16,6 +16,8 @@ class ThirdViewController: UIViewController {
     var fightCounter1 = 0
     var fightCounter2 = 0
     var height = 50
+    var lifeCounter2 = 1.5
+    var lifeCounter1 = 1.5
     
     @IBOutlet weak var fighter1Outlet: UIButton!
     @IBOutlet weak var fighter2Outlet: UIButton!
@@ -72,15 +74,17 @@ class ThirdViewController: UIViewController {
     fightCounter2 += 1
         checkForWinner()
         height += 5
-        player2Line.transform = CGAffineTransform(_UIView.animate(withDuration: 3, animations: ))
+
+        player2Line.transform = CGAffineTransform(scaleX: 1, y: CGFloat(lifeCounter2))
+        lifeCounter2 += 0.5
     }
     
     func checkForWinner()
     {
-        if fightCounter1 == 200{
+        if fightCounter1 == 25{
             showAlert(winner: imageName)
         }
-        if fightCounter2 == 5{
+        if fightCounter2 == 25{
             showAlert(winner: imageName2)
         }
     }

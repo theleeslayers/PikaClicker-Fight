@@ -361,18 +361,19 @@
                                     <action selector="fighter2:" destination="lMr-Ml-QRz" eventType="touchUpInside" id="nY6-4g-cPQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-gl-adD">
-                                <rect key="frame" x="167" y="318" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BACK"/>
-                                <connections>
-                                    <segue destination="xtz-O8-Vqg" kind="show" id="qh5-7Y-4oJ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yec-Zo-aNC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yec-Zo-aNC">
                                 <rect key="frame" x="334" y="567" width="25" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0187217119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVj-sI-kVR">
+                                <rect key="frame" x="334" y="647" width="40" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0Ur-ZS-b6w"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -380,8 +381,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wVj-sI-kVR" firstAttribute="bottom" secondItem="tM6-XC-VZu" secondAttribute="bottom" id="2EN-Ee-g9C"/>
+                            <constraint firstItem="tM6-XC-VZu" firstAttribute="trailing" secondItem="wVj-sI-kVR" secondAttribute="trailing" constant="1" id="2wG-i9-9Ma"/>
                             <constraint firstItem="zCs-wB-ekO" firstAttribute="centerX" secondItem="Fiq-0u-OIN" secondAttribute="centerX" id="9VI-IO-YHC"/>
                             <constraint firstItem="zCs-wB-ekO" firstAttribute="leading" secondItem="Fiq-0u-OIN" secondAttribute="leading" constant="-54" id="CgW-jI-By3"/>
+                            <constraint firstItem="wVj-sI-kVR" firstAttribute="leading" secondItem="Yec-Zo-aNC" secondAttribute="leading" id="FCv-kX-3iM"/>
+                            <constraint firstItem="wVj-sI-kVR" firstAttribute="leading" secondItem="tM6-XC-VZu" secondAttribute="leading" constant="334" id="La3-f7-aKj"/>
+                            <constraint firstItem="wVj-sI-kVR" firstAttribute="top" secondItem="Yec-Zo-aNC" secondAttribute="bottom" id="QkC-wS-QB7"/>
                             <constraint firstItem="zCs-wB-ekO" firstAttribute="top" secondItem="Fiq-0u-OIN" secondAttribute="top" id="ZO8-Gb-9WQ"/>
                             <constraint firstItem="zCs-wB-ekO" firstAttribute="bottom" secondItem="tM6-XC-VZu" secondAttribute="bottom" id="qci-vS-g1k"/>
                             <constraint firstAttribute="trailing" secondItem="zCs-wB-ekO" secondAttribute="trailing" constant="-53" id="qqD-ej-IQb"/>
@@ -421,7 +427,4 @@
         <image name="snorlax" width="512" height="512"/>
         <image name="squirtle" width="512" height="512"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="qh5-7Y-4oJ"/>
-    </inferredMetricsTieBreakers>
 </document>
